@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "iris-glint-fix",
+  "version": "${version}",
+  "name": "Iris Glint Fix",
+  "description": "Fixes Iris 1.11.7 on Minecraft 26.3 sometimes crashing while loading the enchantment glint texture (\"Close the existing render pass before performing additional commands\"). Loads the glint textures at the start of each frame, before any render pass. Does not change Iris.",
+  "authors": [
+    "Hiveko"
+  ],
+  "contact": {
+    "sources": "https://github.com/Hiveko75/iris-glint-fix",
+    "issues": "https://github.com/Hiveko75/iris-glint-fix/issues"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "mixins": [
+    {
+      "config": "iris-glint-fix.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "minecraft": "${minecraft_range}",
+    "fabricloader": ">=0.17.0",
+    "java": ">=25",
+    "iris": "*"
+  }
+}
