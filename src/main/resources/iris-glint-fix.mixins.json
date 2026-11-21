@@ -3,7 +3,10 @@
   "package": "io.github.hiveko.irisglintfix.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "GameRendererMixin"
+    "GameRendererMixin",
+    "LevelExtractorMixin",
+    "OptionInstanceAccessor",
+    "OptionInstanceMixin"
   ],
   "injectors": {
     "defaultRequire": 1

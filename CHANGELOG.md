@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.0 (2026-11-21, Minecraft 26.3)
+
+**Improved Transparency comes back after shaders.** Iris turns Minecraft's Improved Transparency off whenever a shader pack is enabled, but never turns it back on when shaders are disabled again. Iris Glint Fix now remembers that Iris switched it off and switches it back on when shaders are disabled. If it was off before shaders were enabled, it stays off.
+
+- Only a change made while shaders are enabled is remembered (the option is locked then, so that is Iris).
+- The option is switched back on at the start of the renderer reload that Iris starts when shaders are disabled, so there is no second reload; options.txt is saved.
+- The flag is kept in `config/iris-glint-fix.properties`, so it also works after restarting the game with shaders on.
+
+The glint texture fix from 1.0.0 is unchanged.
+
 ## 1.0.0 (2026-11-19, Minecraft 26.3)
 
 Fixes Iris 1.11.7 on Minecraft 26.3 sometimes crashing while it loads the enchantment glint texture ([IrisShaders/Iris#3390](https://github.com/IrisShaders/Iris/issues/3390)):
