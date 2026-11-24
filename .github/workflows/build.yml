@@ -27,3 +27,4 @@ jobs:
         with:
           name: iris-glint-fix
           path: build/libs/*.jar
+          retention-days: 14
